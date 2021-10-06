@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <form action="<?php get_the_permalink(); ?>" method="post" id="car_form"
+            class="car-form">
+                    <div class="form-input">
+                        <label for="año" id="año_auto">año</label>
+                        <input type="radio" name="año" id="año" required>
+                        <body id="respuesta"></body>
+                    </div>
+                    <div class="form-input">
+                        <label for='marca'>Marca</label>
+                        <input type="text" name="marca" id="marca" required>
+                    </div>
+                    <div class="form-input">
+                        <label for='version'>Version</label>
+                        <input type="text" name="version" id="version" required>
+                    </div>
+                    <div class="form-input">
+                        <label for="color">color</label>
+                        <input type="radio" name="color" value="1" required> Rojo
+                        <br><input type="radio" name="color" value="2" required> Negro
+                        <br><input type="radio" name="color" value="3" required> Plateado
+                        <br><input type="radio" name="color" value="4" required> Blanco
+                    </div>
+                    <div class="form-input">
+                        <label for='version'>Version</label>
+                        <input type="text" name="version" id="version" required>
+                    </div>
+                    
+                    <div class="form-input">
+                        <label for='nombre'>Nombre</label>
+                        <input type="text" name="nombre" id="nombre" required>
+                    </div>
+                    
+                    <div class="form-input">
+                        <label for='telefono'>Telefono</label>
+                        <input type="number" name="telefono" id="telefono" required>
+                    </div>
+            
+                    <div class="form-input">
+                        <label for='email'>Correo Electronico</label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+            
+                    <div class="form-input">
+                        <label for='ubicacion'>Ubicación</label>
+                        <input type="text" name="ubicacion" id="ubicacion" required>
+                    </div>
+                    
+                    <div class="form-input">
+                        <input type="submit" value="Cotizar">
+                    </div>
+            
+                </form>
+
+
+
+    <script src="index.js"></script>
+    </body>
+</html>
