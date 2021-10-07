@@ -6,10 +6,10 @@ function traerDatos(){
     console.log('dentro de la funcion');
     const http = new XMLHttpRequest();
 
-    http.open('get', 'http://us-central1-cardb-sj.cloudfunctions.net/car-master-api/years', true);
-
+    http.open('GET', 'https://us-central1-cardb-sj.cloudfunctions.net/car-master-api/models?year=2021&brand=Audi', true);
+     
     http.send();
-
+    
     http.onreadystatechange = function() {
         if(this.readyState==4 && this.status == 200) {
 
