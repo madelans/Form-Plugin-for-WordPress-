@@ -4,7 +4,7 @@
     </head>
     <body>
       <div class="container">
-          <h2>Formulario de multiples pasos venta auto</h2>
+          <h2 class="">Formulario de multiples pasos venta auto</h2>
           <div class="progress">
               <div class="progress-bar progress-bar-circle active" role="progressbar"  aria-valuemin="0" aria-valuemax="100"></div>
           </div>
@@ -15,8 +15,8 @@
                   <!--AÑO-->
                   <fieldset>
                       <h2>Selecciona el año</h2>
-                      <div class="options">
-                        <button class="button" id="" type="button" name="">
+                      <div class="options next_form">
+                        <button class="button next-form" id="" type="button" name="">
                             <div class="button-content">
                                 <img src="" alt="" class="img-button">
                                 <p class="text-button"></p>
@@ -27,7 +27,7 @@
                   <!--MARCA-->
                   <fieldset>
                     <h2>Marca</h2>
-                    <div class="options">
+                    <div class="options next_form">
                       <button class="button" id="" type="button" name="">
                           <div class="button-content">
                               <img src="" alt="" class="img-button">
@@ -39,7 +39,7 @@
                  <!--MODELO-->
                    <fieldset>
                     <h2>Modelo</h2>
-                    <div class="options">
+                    <div class="options next_form">
                       <button class="button" id="" type="button" name="">
                           <div class="button-content">
                               <img src="" alt="" class="img-button">
@@ -51,7 +51,7 @@
                   <!--VERSION-->
                   <fieldset>
                     <h2>Versión</h2>
-                    <div class="options">
+                    <div class="options next_form">
                       <button class="button" id="" type="button" name="">
                           <div class="button-content">
                               <img src="" alt="" class="img-button">
@@ -63,7 +63,7 @@
                    <!--COLOR-->
                   <fieldset>
                     <h2>Color</h2>
-                    <div class="options">
+                    <div class="options next_form">
                       <button class="button" id="" type="button" name="">
                           <div class="button-content">
                               <img src="" alt="" class="img-button">
@@ -75,7 +75,7 @@
                   <!--KILOMETRAJE-->
                    <fieldset>
                     <h2>Kilometraje</h2>
-                    <div class="options">
+                    <div class="options next_form">
                       <button class="button" id="" type="button" name="">
                           <div class="button-content">
                               <img src="" alt="" class="img-button">
@@ -119,8 +119,16 @@
                </form>
             </div> 
 
+            <style type="text/css">
+                #car_form fieldset:not(:first-of-type) {
+                display: none;
+                }
+                </style>
 
-
+    
+    <script src="jquery-1.12.0.min.js"></script>
     <script src="index.js"></script>
+    <script src="form.js"></script>
+    
     </body>
 </html>
