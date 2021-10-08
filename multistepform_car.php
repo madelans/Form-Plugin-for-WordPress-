@@ -1,6 +1,24 @@
-<!DOCTYPE html>
-<html>
-    <body>
+<?php
+/*
+  Plugin Name: Multistep car form
+  Plugin URI: -
+  Description: Form specific for a car registration and contact
+  Version: 1.0
+  Author: Maria de los Angeles Silva
+  Author URI: https://github.com/madelans
+ */
+?>
+
+
+<?php 
+
+ add_shortcode('multistep_car_form', 'car_form_data');
+   
+  
+  function car_form_data() {
+?>
+
+ <body>
       <div class="container">
           <h2 class="">Formulario de multiples pasos venta auto</h2>
           <div class="progress">
@@ -128,7 +146,12 @@
     <script src="jquery-1.12.0.min.js"></script>
     <script src="script.js"></script>
     <script src="form_car.js"></script>
-    
-    
+    <script src="years.json"></script>
     </body>
-</html>
+    
+   <?php
+  };
+   ?>
+  
+    
+    
