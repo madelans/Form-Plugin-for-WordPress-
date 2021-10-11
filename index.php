@@ -2,7 +2,7 @@
 <html>
     <body>
       <div class="container">
-          <h2 class="">Formulario de multiples pasos venta auto</h2>
+          <h2 class="">Formulario de multiples pasos venta auto ESTE DEBERIA SER</h2>
           <div class="progress">
               <div class="progress-bar progress-bar-circle active" role="progressbar"  aria-valuemin="0" aria-valuemax="100"></div>
           </div>
@@ -123,12 +123,5 @@
                 display: none;
                 }
                 </style>
-
-    
-    <script src="jquery-1.12.0.min.js"></script>
-    <script src="script.js"></script>
-    <script src="form_car.js"></script>
-    
-    
     </body>
 </html>

@@ -10,15 +10,21 @@
 ?>
 
 
+
+
+
 <?php 
 
  add_shortcode('multistep_car_form', 'car_form_data');
    
   
   function car_form_data() {
-?>
 
- <body>
+    ?>
+
+<!DOCTYPE html>
+<html>
+    <body>
       <div class="container">
           <h2 class="">Formulario de multiples pasos venta auto</h2>
           <div class="progress">
@@ -141,17 +147,26 @@
                 display: none;
                 }
                 </style>
-
-    
-    <script src="jquery-1.12.0.min.js"></script>
-    <script src="script.js"></script>
-    <script src="form_car.js"></script>
-    <script src="years.json"></script>
     </body>
-    
-   <?php
+</html>
+<?php
   };
-   ?>
+ 
+?>
   
+  <?php
+  
+  function script_load_multiform() {
+   
+
+   wp_enqueue_script('custom_form_script', plugins_dir_url ('admin\js\form_car.js', __FILE__), array('jquery'),'3.3.2', false);
+   wp_enqueue_script('custom_script',plugins_dir_url ('admin\js\script.js', __FILE__), array('jquery'),'3.3.2', false);
+
+  };
+
+add_action ('wp_enqueue_scripts', 'script_load_multiform');
+
+
+?>
     
     
